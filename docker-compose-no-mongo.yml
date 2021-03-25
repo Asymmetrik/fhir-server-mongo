@@ -1,0 +1,18 @@
+version: '3'
+services:
+  fhir:
+    depends_on:
+      - mongo
+    image: imranq2/node-fhir-server-mongo:1.2.13
+    environment:
+      SERVER_PORT: 3000
+      MONGO_HOSTNAME: mongo
+      RESOURCE_SERVER: http://fhir:3000/
+      AUTH_SERVER_URI: http://myauthzserver.com
+      CLIENT_ID: client
+      CLIENT_SECRET: secret
+      INTROSPECTION_URL: https://myauthzserver.com/introspect
+    ports:
+      - '3000:3000'
+    command: yarn nodemon
+    restart: always

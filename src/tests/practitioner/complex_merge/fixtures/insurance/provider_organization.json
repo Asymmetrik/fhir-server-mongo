@@ -1,0 +1,29 @@
+{
+    "resourceType": "Organization",
+    "id": "MWHC",
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "FI",
+                        "display": "Facility Id"
+                    }
+                ]
+            },
+            "value": "MWHC"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                    "code": "prov",
+                    "display": "Healthcare Provider"
+                }
+            ]
+        }
+    ]
+}

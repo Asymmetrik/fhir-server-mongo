@@ -1,0 +1,270 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "extension": [
+    {
+      "url": "http://fhir-internal-service.fhir-prod.svc.cluster.local:3000/4_0_0/StructureDefinition/user-ip-address",
+      "valueString": "99.99.99.99, 99.99.99.99"
+    },
+    {
+      "url": "http://fhir-internal-service.fhir-prod.svc.cluster.local:3000/4_0_0/StructureDefinition/user-agent",
+      "valueString": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36"
+    }
+  ],
+  "status": "completed",
+  "authored": "2021-02-09T00:10:49.723Z",
+  "questionnaire": "https://protocol-service.icanbwell.com/Questionnaire/medstar-squeeze|3.0.0",
+  "item": [
+    {
+      "linkId": "SQ1",
+      "text": "First name",
+      "answer": [
+        {
+          "valueString": "James"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ2",
+      "text": "Last name",
+      "answer": [
+        {
+          "valueString": "Harden"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ3",
+      "text": "Date of birth (MM/DD/YYYY)",
+      "answer": [
+        {
+          "valueDate": "1990-11-13"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ4",
+      "text": "Email",
+      "answer": [
+        {
+          "valueString": "foo@gmail.com"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ5",
+      "text": "Mobile phone #",
+      "answer": [
+        {
+          "valueString": "+15169999999"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ6",
+      "text": "Send me updates via text message (Mobile number required. Standard messaging rates may apply)",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "SQ7",
+      "text": "Residential Address",
+      "answer": [
+        {
+          "valueString": "1 Address St"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ8",
+      "text": "Apartment, Suite, Unit, etc. (Optional)",
+      "answer": [
+        {
+          "valueString": "APT E"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ9",
+      "text": "City",
+      "answer": [
+        {
+          "valueString": "Hometown"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ10",
+      "text": "State",
+      "answer": [
+        {
+          "valueString": "MD"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ11",
+      "text": "Zip code",
+      "answer": [
+        {
+          "valueString": "20850"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ13",
+      "text": "Occupation"
+    },
+    {
+      "linkId": "SQ14",
+      "text": "Do you have any existing health conditions?",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "SQ15",
+      "text": "Health conditions",
+      "answer": [
+        {
+          "valueString": "Asthma"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ16",
+      "text": "Have you already received the first vaccination?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "SQ17",
+      "text": "Which type did you receive?"
+    },
+    {
+      "linkId": "SQ18",
+      "text": "Was your first vaccine administered by MedStar Health?"
+    },
+    {
+      "linkId": "SQ19",
+      "text": "Date of first dose (MM/DD/YYYY)"
+    },
+    {
+      "linkId": "SQ20",
+      "text": "Have you ever been a patient of MedStar Health?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "SQ21",
+      "text": "MedStar Health Patient ID (optional)"
+    },
+    {
+      "linkId": "SQ22",
+      "text": "I have verified this information and confirm that it’s true.",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "SQ23",
+      "text": "I have received a copy of the Notice of Privacy Policies",
+      "answer": [
+        {
+          "valueBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "SQ24",
+      "text": "Middle name",
+      "answer": [
+        {
+          "valueString": "F"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ25",
+      "text": "Assigned sex at birth",
+      "answer": [
+        {
+          "valueString": "Female"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ26",
+      "text": "Home phone #"
+    },
+    {
+      "linkId": "SQ27",
+      "text": "As appointments become available, would you like to be placed on a call list to schedule your vaccine via phone"
+    },
+    {
+      "linkId": "SQ28",
+      "text": "What is the best time of day to contact you"
+    },
+    {
+      "linkId": "SQ29",
+      "text": "Preferred Facility"
+    },
+    {
+      "linkId": "SQ30",
+      "text": "Can you get to one of these locations within 30 minutes if contacted for a same-day vaccine"
+    },
+    {
+      "linkId": "SQ31",
+      "text": "Are you a healthcare worker with potential for direct patient care?",
+      "answer": [
+        {
+          "valueBoolean": false
+        }
+      ]
+    },
+    {
+      "linkId": "SQ32",
+      "text": "Ethnicity",
+      "answer": [
+        {
+          "valueString": "Hispanic/Spanish Origin"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ33",
+      "text": "Race Questions",
+      "item": [
+        {
+          "linkId": "SQ33.1",
+          "text": "Race",
+          "answer": [
+            {
+              "valueString": "White"
+            }
+          ]
+        },
+        {
+          "linkId": "SQ33.2",
+          "text": "Select all that apply"
+        }
+      ]
+    },
+    {
+      "linkId": "SQ34",
+      "text": "Primary phone"
+    }
+  ]
+}

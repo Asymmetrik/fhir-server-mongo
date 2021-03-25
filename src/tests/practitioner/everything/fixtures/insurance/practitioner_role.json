@@ -1,0 +1,25 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "1679033641-AETNA-Aetna-Elect-Choice--EPO--Aetna-Health-Fund--In",
+    "practitioner": {
+        "reference": "Practitioner/1679033641"
+    },
+    "organization": {
+        "reference": "Organization/MWHC",
+        "type": "Organization",
+        "display": "MWHC"
+    },
+    "extension": [
+        {
+            "url": "https://raw.githubusercontent.com/imranq2/SparkAutoMapper.FHIR/main/StructureDefinition/insurance_plan",
+            "extension": [
+                {
+                    "url": "plan",
+                    "valueReference": {
+                        "reference": "InsurancePlan/AETNA-Aetna_Elect_Choice__EPO__Aetna_Health_Fund__Innovation_He"
+                    }
+                }
+            ]
+        }
+    ]
+}

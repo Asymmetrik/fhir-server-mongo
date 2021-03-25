@@ -1,0 +1,103 @@
+{
+    "resourceType": "HealthcareService",
+    "id": "MAX-MALX",
+    "identifier": [
+        {
+            "use": "usual",
+            "system": "MedstarHealth.org",
+            "value": "MAX-MALX"
+        }
+    ],
+    "providedBy": {
+        "type": "Organization",
+        "identifier": {
+            "system": "MedstarHealth.Org",
+            "value": "MAX"
+        }
+    },
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "MedstarHealth.org",
+                    "code": "Family Medicine",
+                    "display": "Family Medicine"
+                }
+            ],
+            "text": "Primary Specialty"
+        },
+        {
+            "coding": [
+                {
+                    "system": "MedstarHealth.org",
+                    "code": "Family Medicine",
+                    "display": "Family Medicine"
+                }
+            ],
+            "text": "Primary Specialty Group"
+        }
+    ],
+    "name": "Primary Care",
+    "eligibility": [
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "MedstarHealth.org",
+                        "code": "No Limit",
+                        "display": "No Limit"
+                    }
+                ]
+            },
+            "comment": "Minimum patient age"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "MedstarHealth.org",
+                        "code": "No Limit",
+                        "display": "No Limit"
+                    }
+                ]
+            },
+            "comment": "Maximum patient age"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "MedstarHealth.org",
+                        "code": "Y",
+                        "display": "Y"
+                    }
+                ]
+            },
+            "comment": "Accepts Workers Compensation Patients"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "MedstarHealth.org",
+                        "code": "Y",
+                        "display": "Y"
+                    }
+                ]
+            },
+            "comment": "Accepts Auto Accident Patients"
+        },
+        {
+            "code": {
+                "coding": [
+                    {
+                        "system": "MedstarHealth.org",
+                        "code": "Y",
+                        "display": "Y"
+                    }
+                ]
+            },
+            "comment": "Video Visit available"
+        }
+    ]
+}

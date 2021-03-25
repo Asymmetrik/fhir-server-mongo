@@ -1,0 +1,12 @@
+{
+  "entry": [
+    {
+      "resource": {
+        "id": "1679033641",
+        "resourceType": "Practitioner"
+      }
+    }
+  ],
+  "resourceType": "Bundle",
+  "type": "searchset"
+}

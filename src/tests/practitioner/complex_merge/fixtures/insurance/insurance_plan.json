@@ -1,0 +1,31 @@
+{
+    "resourceType": "InsurancePlan",
+    "id": "AETNA-Aetna-Elect-Choice--EPO--Aetna-Health-Fund--Innovation-He",
+    "name": "AETNA-Aetna Elect Choice/ EPO (Aetna Health Fund) Innovation Health: Network Only Plus",
+    "ownedBy": {
+        "reference": "Organization/AETNA"
+    },
+    "plan": [
+        {
+            "identifier": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                "code": "XV",
+                                "display": "Health Plan"
+                            }
+                        ]
+                    },
+                    "value": "Aetna Elect Choice/ EPO (Aetna Health Fund) Innovation Health: Network Only Plus"
+                }
+            ],
+            "coverageArea": [
+                {
+                    "reference": "Location/1886535265"
+                }
+            ]
+        }
+    ]
+}

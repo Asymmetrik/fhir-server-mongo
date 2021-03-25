@@ -8,6 +8,7 @@ const moment = require('moment-timezone');
  */
 function parseDate(date) {
   // supports date formats with prefix
+  // eslint-disable-next-line security/detect-unsafe-regex
   const regex = /(^\D\D)?([\d-Tt:+]+)([\d: ]+)?/;
   const match = date.match(regex);
   let prefix = '$eq';
@@ -47,7 +48,7 @@ let validateDate = function (dates) {
     const dateArr = dates.split(',');
     if (dateArr) {
       for (let date in dateArr) {
-        parsedDate = Object.assign(parsedDate, parseDate(dateArr[date]));
+        parsedDate = Object.assign(parsedDate, parseDate(dateArr[`${date}`]));
       }
     }
   }

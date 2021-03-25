@@ -1,31 +1,35 @@
 {
-  "name": "@asymmetrik/node-fhir-server-mongo",
-  "version": "2.0.0",
-  "description": "FHIR Facade Server implementing @asymmetrik/node-fhir-server-core",
+  "name": "bwell-fhir-server",
+  "version": "0.0.1",
+  "description": "R4 compliant FHIR SERVER built on top of @asymmetrik/node-fhir-server-core",
   "main": "src/index.js",
-  "repository": "https://github.com/Asymmetrik/node-fhir-server-mongo.git",
-  "contributors": [
-    "Robert Winterbottom <rwinterbottom@asymmetrik.com>",
-    "Jon Lee <jlee@asymmetrik.com>",
-    "Shane O'Neill <soneill@asymmetrik.com>"
-  ],
+  "repository": "https://github.com/icanbwell/node-fhir-server",
   "license": "MIT",
   "engines": {
-    "node": ">=10.13.0"
+    "node": "15.12.x"
   },
   "scripts": {
-    "start": "node src/index.js",
-    "nodemon": "cross-env NODE_ENV=development; node scripts/nodemon;",
-    "test": "npm run test:lint;",
+    "start": "NODE_ENV=production node src/index.js",
+    "dev": "NODE_ENV=development ./node_modules/pm2/bin/pm2-runtime start ./src/index.js;",
+    "test": "NODE_ENV=test npm run test:lint && npm run test:jest",
+    "failed_tests": "NODE_ENV=test npm run test:lint && npm run test:jest --onlyFailures",
     "test:lint": "eslint \"src/**/*.js\"",
-    "test:jest": "jest --forceExit",
+    "test:jest": "NODE_ENV=test jest --forceExit --detectOpenHandles -i .",
+    "test:integration": "NODE_ENV=test jest --forceExit --detectOpenHandles -i src/tests/practitioner/complex_merge",
+    "test:everything": "NODE_ENV=test jest --forceExit --detectOpenHandles -i src/tests/practitioner/everything",
+    "test:return_specific_elements": "NODE_ENV=test jest --forceExit --detectOpenHandles -i src/tests/practitioner/search_return_specific_elements",
+    "test:merge": "NODE_ENV=test jest --forceExit --detectOpenHandles -i src/tests/practitioner/practitioner.merge.test.js",
     "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect",
+    "prepare": "",
     "prettier-check": "prettier --check \"**/*.{js,mjs,cjs,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,less,graphql,graphqls,gql}\"",
-    "prettier-fix": "prettier --write \"**/*.{js,mjs,cjs,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,less,graphql,graphqls,gql}\""
+    "prettier-fix": "prettier --write \"**/*.{js,mjs,cjs,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,less,graphql,graphqls,gql}\"",
+    "fix_lint": "eslint --fix \"src/**/*.js\""
   },
+  "pre-commit": [
+    "test"
+  ],
   "jest": {
-    "verbose": true,
+    "verbose": false,
     "testEnvironment": "node",
     "collectCoverage": false,
     "coverageReporters": [
@@ -33,26 +37,60 @@
       "lcov",
       "json"
     ],
+    "reporters": [
+      "default",
+      "jest-failure-reporter"
+    ],
     "coveragePathIgnorePatterns": [
       "<rootDir>/src/testutils/"
-    ]
+    ],
+    "preset": "@shelf/jest-mongodb"
   },
   "dependencies": {
-    "@asymmetrik/node-fhir-server-core": "^2.1.3",
-    "fast-json-patch": "^2.0.7",
-    "moment-timezone": "^0.5.14",
-    "mongo": "^0.1.0",
-    "object-hash": "^1.3.1",
-    "snyk": "^1.319.1",
-    "var": "^0.3.2"
+    "@asymmetrik/fhir-json-schema-validator": "^0.9.8",
+    "@asymmetrik/node-fhir-server-core": "^2.2.3",
+    "@asymmetrik/sof-scope-checker": "^1.0.7",
+    "@sentry/node": "^6.2.1",
+    "aws-sdk": "^2.854.0",
+    "chokidar": "^3.5.1",
+    "deepcopy": "^2.1.0",
+    "deepmerge": "^4.2.2",
+    "docusaurus": "^2.0.0-alpha.32",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "fast-deep-equal": "^3.1.3",
+    "fast-json-patch": "^3.0.0-1",
+    "http-terminator": "^3.0.0",
+    "immer": "^8.0.1",
+    "joi": "^17.4.0",
+    "jwks-rsa": "^2.0.1",
+    "moment-timezone": "^0.5.33",
+    "mongodb": "^3.6.4",
+    "object-hash": "^2.1.1",
+    "passport-http-bearer": "^1.0.1",
+    "passport-jwt": "^4.0.0",
+    "prom-client": "^13.1.0",
+    "response-time": "^2.3.2",
+    "snyk": "^1.465.0",
+    "superagent": "^6.1.0",
+    "swagger-ui-express": "^4.1.6",
+    "var": "^0.4.0",
+    "winston": "^3.3.3"
   },
   "devDependencies": {
-    "cross-env": "^5.1.6",
-    "eslint": "^4.14.0",
-    "jest": "^24.0.0",
-    "nodemon": "^1.18.3",
-    "prettier": "^2.1.2"
+    "@shelf/jest-mongodb": "^1.2.3",
+    "async": "^3.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^7.20.0",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^26.6.3",
+    "jest-failure-reporter": "^1.0.1",
+    "pm2": "^4.5.5",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.2.1",
+    "supertest": "^6.1.3"
   },
   "private": false,
-  "snyk": true
+  "snyk": false
 }

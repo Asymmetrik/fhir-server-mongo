@@ -1,3 +1,7 @@
+![Node.js CI](https://github.com/imranq2/node-fhir-server-mongo/workflows/Node.js%20CI/badge.svg)
+
+![publish_docker](https://github.com/imranq2/node-fhir-server-mongo/workflows/publish_docker/badge.svg)
+
 # Asymmetrik FHIR API Server + Mongo Example
 
 [![Build Status](https://travis-ci.org/Asymmetrik/node-fhir-server-mongo.svg?branch=master)](https://travis-ci.org/Asymmetrik/node-fhir-server-mongo)
@@ -22,7 +26,7 @@ This project is an example project built on `@asymmetrik/node-fhir-server-core` 
 
 ## Next Steps
 
-The server should now be up and running on the default port 3000. You should see the following output:
+The server should now be up and running on the default port 3000. You should see the following output: 
 
 ```shell
 ... - verbose: Server is up and running!

@@ -33,6 +33,6 @@ module.exports.strategy = new Strategy(function (token, done) {
       }
 
       // default return unauthorized
-      return done(new Error('Invalid token'));
+      return done(null, false);
     });
 });

@@ -1,0 +1,15 @@
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "information",
+      "code": "informational",
+      "details": {
+        "text": "OK"
+      },
+      "expression": [
+        "Practitioner"
+      ]
+    }
+  ]
+}

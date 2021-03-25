@@ -1,0 +1,9 @@
+.DS_Store
+.github
+.idea
+.mypy_cache
+.pytest_cache
+tmp
+.vscode
+yarn.lock
+package-lock.json

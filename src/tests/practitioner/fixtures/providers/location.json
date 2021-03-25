@@ -1,0 +1,16 @@
+{
+    "resourceType": "Location",
+    "id": "3437",
+    "alias": [
+        "UF3-UADM"
+    ],
+    "address": {
+        "line": [
+            "33RD STREET PROFESSIONAL BLDG,G",
+            "200 EAST 33RD STREET"
+        ],
+        "city": "BALTIMORE",
+        "state": "MD",
+        "postalCode": "21218"
+    }
+}

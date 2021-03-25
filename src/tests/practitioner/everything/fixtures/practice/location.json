@@ -1,0 +1,133 @@
+{
+    "resourceType": "Location",
+    "id": "UHG-MDER",
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "FI"
+                    }
+                ],
+                "text": "Practice-Location-Department alias"
+            },
+            "system": "MedstarHealth.org",
+            "value": "UHG-MDER"
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "XX"
+                    }
+                ],
+                "text": "Location mnem"
+            },
+            "system": "MedstarHealth.org",
+            "value": "UHG"
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "DepartmentName"
+                    }
+                ],
+                "text": "Scheduling Department Name"
+            },
+            "system": "MedstarHealth.org",
+            "value": "MMG DERMATOLOGY"
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "DeptMnem"
+                    }
+                ],
+                "text": "Scheduling Department Mnem"
+            },
+            "system": "MedstarHealth.org",
+            "value": "MDER"
+        },
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "DeptNo"
+                    }
+                ],
+                "text": "Scheduling Department Number"
+            },
+            "system": "MedstarHealth.org",
+            "value": "SCD"
+        }
+    ],
+    "status": "active",
+    "name": "MSH 5009 Honeygo suite 216",
+    "description": "Baltimore Region",
+    "mode": "instance",
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "MedstarHealth.org",
+                    "code": "Dermatology",
+                    "display": "Dermatology"
+                }
+            ],
+            "text": "practice speciality"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+                    "code": "ER",
+                    "display": "ER Indicator"
+                }
+            ],
+            "text": "ER Indicator"
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "rank": 1
+        },
+        {
+            "system": "phone",
+            "value": "(410) 256-5858",
+            "rank": 2
+        },
+        {
+            "system": "fax",
+            "value": "(866) 733-0434",
+            "rank": 3
+        },
+        {
+            "system": "url",
+            "rank": 4
+        }
+    ],
+    "physicalType": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+                "code": "bu"
+            }
+        ]
+    },
+    "position": {
+        "longitude": -76.61668,
+        "latitude": 39.32792
+    },
+    "managingOrganization": {
+        "reference": "Organization/199691290",
+        "type": "Organization"
+    }
+}

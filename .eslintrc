@@ -9,7 +9,13 @@
   "parserOptions": {
     "ecmaVersion": 8
   },
-  "extends": "eslint:recommended",
+  "plugins": [
+    "security"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:security/recommended"
+  ],
   "rules": {
     "quotes": [2, "single", "avoid-escape"],
     "no-compare-neg-zero": 0,

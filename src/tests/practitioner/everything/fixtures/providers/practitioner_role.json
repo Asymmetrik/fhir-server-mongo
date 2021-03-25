@@ -1,0 +1,61 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "4657-3437",
+    "practitioner": {
+        "reference": "Practitioner/1679033641"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                    "code": "doctor",
+                    "display": "Doctor"
+                }
+            ],
+            "text": "Doctor"
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "https://www.http://medstarhealth.org/",
+                    "code": "Family Medicine",
+                    "display": "Family Medicine"
+                }
+            ],
+            "text": "Family Medicine"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "207Q00000X",
+                    "display": "Family Medicine"
+                }
+            ],
+            "text": "Family Medicine"
+        },
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "261QP2300X",
+                    "display": "Primary Care"
+                }
+            ],
+            "text": "Primary Care"
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/UF3-UADM"
+        }
+    ],
+    "healthcareService": [
+        {
+            "reference": "HealthcareService/1679033641-UF3-UADM"
+        }
+    ]
+}

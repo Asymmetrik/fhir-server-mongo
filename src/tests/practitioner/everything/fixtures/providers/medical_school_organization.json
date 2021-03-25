@@ -1,0 +1,16 @@
+{
+    "resourceType": "Organization",
+    "id": "Stanford-Medical-School",
+    "name": "Stanford Medical School",
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                    "code": "edu",
+                    "display": "Educational Institute"
+                }
+            ]
+        }
+    ]
+}

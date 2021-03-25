@@ -1,0 +1,23 @@
+{
+    "resourceType": "HealthcareService",
+    "id": "-733797173",
+    "identifier": [
+        {
+            "use": "usual",
+            "system": "bwell",
+            "value": "-733797173"
+        }
+    ],
+    "type": [],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "http://nucc.org/provider-taxonomy",
+                    "code": "261QP2300X",
+                    "display": "Primary Care and Student Health"
+                }
+            ]
+        }
+    ]
+}

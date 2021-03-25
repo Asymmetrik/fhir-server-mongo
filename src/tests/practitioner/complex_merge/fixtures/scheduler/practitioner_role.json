@@ -1,0 +1,65 @@
+{
+    "resourceType": "PractitionerRole",
+    "id": "MAX-MALX",
+    "identifier": [
+        {
+            "use": "usual",
+            "type": {
+                "coding": [
+                    {
+                        "system": "MedstarHealth.org",
+                        "code": "Medstar Provider-Scheduling ID",
+                        "display": "Medstar Provider-Scheduling ID"
+                    }
+                ]
+            },
+            "system": "MedstarHealth.org",
+            "value": "MAX-MALX"
+        }
+    ],
+    "practitioner": {
+        "reference": "Practitioner/1679033641"
+    },
+    "code": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/practitioner-role",
+                    "code": "doctor"
+                }
+            ]
+        }
+    ],
+    "specialty": [
+        {
+            "coding": [
+                {
+                    "system": "MedstarHealth.org",
+                    "code": "Family Medicine",
+                    "display": "Family Medicine"
+                }
+            ],
+            "text": "Provider's Primary Specialty"
+        },
+        {
+            "coding": [
+                {
+                    "system": "MedstarHealth.org",
+                    "code": "Family Medicine",
+                    "display": "Family Medicine"
+                }
+            ],
+            "text": "Provider's Primary Specialty Group"
+        }
+    ],
+    "location": [
+        {
+            "reference": "Location/MAX-MALX"
+        }
+    ],
+    "healthcareService": [
+        {
+            "reference": "HealthcareService/MAX-MALX"
+        }
+    ]
+}

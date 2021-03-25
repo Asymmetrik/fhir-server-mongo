@@ -1,0 +1,29 @@
+{
+    "resourceType": "Organization",
+    "id": "AETNA",
+    "identifier": [
+        {
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "XV",
+                        "display": "Health Plan"
+                    }
+                ]
+            },
+            "value": "AETNA"
+        }
+    ],
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                    "code": "ins",
+                    "display": "Insurance Company"
+                }
+            ]
+        }
+    ]
+}

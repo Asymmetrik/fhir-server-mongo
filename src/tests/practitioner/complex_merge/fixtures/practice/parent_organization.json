@@ -1,0 +1,17 @@
+{
+    "resourceType": "Organization",
+    "id": "MedStar-Medical-Group",
+    "type": [
+        {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                    "code": "prov",
+                    "display": "Healthcare Provider"
+                }
+            ],
+            "text": "Healthcare Organization"
+        }
+    ],
+    "name": "MedStar Medical Group"
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "resourceType": "Practitioner",
+    "id": "1",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2021-01-31T21:12:09+00:00"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "PRN"
+            }
+          ]
+        },
+        "system": "medstarhealth.org",
+        "value": "4657"
+      },
+      {
+        "use": "official",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "NPI"
+            }
+          ]
+        },
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "1679033641"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "usual",
+        "family": "AL-ANI MBBS",
+        "given": [
+          "AWSSE"
+        ]
+      }
+    ],
+    "telecom": [],
+    "address": [
+      {
+        "use": "work",
+        "type": "physical",
+        "text": "MedStar Adult Medicine at MUMH",
+        "line": [
+          "33RD STREET PROFESSIONAL BLDG,G",
+          "200 EAST 33RD STREET"
+        ],
+        "city": "BALTIMORE",
+        "state": "MD",
+        "postalCode": "21218",
+        "country": "USA"
+      }
+    ],
+    "gender": "unknown"
+  },
+  {
+    "resourceType": "Practitioner",
+    "id": "2",
+    "meta": {
+      "versionId": "1",
+      "lastUpdated": "2021-01-31T21:12:09+00:00"
+    },
+    "identifier": [
+      {
+        "use": "usual",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "PRN"
+            }
+          ]
+        },
+        "system": "medstarhealth.org",
+        "value": "4657"
+      },
+      {
+        "use": "official",
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code": "NPI"
+            }
+          ]
+        },
+        "system": "http://hl7.org/fhir/sid/us-npi",
+        "value": "1679033641"
+      }
+    ],
+    "active": true,
+    "name": [
+      {
+        "use": "usual",
+        "family": "AL-ANI MBBS",
+        "given": [
+          "AWSSE"
+        ]
+      }
+    ],
+    "telecom": [],
+    "address": [
+      {
+        "use": "work",
+        "type": "physical",
+        "text": "MedStar Adult Medicine at MUMH",
+        "line": [
+          "33RD STREET PROFESSIONAL BLDG,G",
+          "200 EAST 33RD STREET"
+        ],
+        "city": "BALTIMORE",
+        "state": "MD",
+        "postalCode": "21218",
+        "country": "USA"
+      }
+    ],
+    "gender": "unknown"
+  }
+]

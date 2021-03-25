@@ -1,0 +1,89 @@
+{
+    "resourceType": "Organization",
+    "id": "-733797173",
+  "extension": [
+    {
+      "valueDecimal": -76.61668
+    },
+    {
+      "valueDecimal": 39.32792
+    }
+  ],
+    "identifier": [
+      {
+        "use": "usual",
+        "system": "bwell",
+        "value": "-733797173"
+      }
+    ],
+    "active": true,
+    "type": [
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+            "code": "prov",
+            "display": "Healthcare Provider"
+          }
+        ],
+        "text": "Healthcare Organization"
+      },
+      {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+            "code": "ER",
+            "display": "Emergency Room"
+          }
+        ],
+        "text": "ER Indicator"
+      }
+    ],
+    "name": "MedStar Medical Group Dermatology at Honeygo",
+    "alias": [
+      "MedStar Medical Group Derm at Honeygo"
+    ],
+    "telecom": [
+      {
+        "system": "phone",
+        "value": "(410) 256-5858"
+      },
+      {
+        "system": "fax",
+        "value": "(866) 733-0434"
+      }
+    ],
+    "address": [
+      {
+        "line": [
+          "5009 Honeygo Center Drive",
+          "Suite 216"
+        ],
+        "city": "Perry Hall",
+        "state": "MD",
+        "postalCode": "21128"
+      }
+    ],
+    "partOf": {
+      "type": "Organization",
+      "display": "MedStar Medical Group"
+    },
+    "contact": [
+      {
+        "purpose": {
+          "coding": [
+            {
+              "system": "MedstarHealth.org",
+              "code": "Central Scheduling"
+            }
+          ]
+        },
+        "telecom": [
+          {
+            "system": "phone",
+            "use": "work"
+          }
+        ]
+      }
+    ]
+  }

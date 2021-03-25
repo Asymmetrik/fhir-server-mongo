@@ -1,0 +1,7 @@
+{
+    "resourceType": "Location",
+    "id": "CA",
+    "address": {
+        "state": "CA"
+    }
+}

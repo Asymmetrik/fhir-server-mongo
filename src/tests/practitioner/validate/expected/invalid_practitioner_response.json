@@ -1,0 +1,19 @@
+{
+  "resourceType": "OperationOutcome",
+  "issue": [
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "text": "/4_0_0/Practitioner/$validate should be array :{\"type\":\"array\"}: at position .identifier[0].type.coding"
+      }
+    },
+    {
+      "severity": "error",
+      "code": "invalid",
+      "details": {
+        "text": "/4_0_0/Practitioner/$validate should match exactly one schema in oneOf :{\"passingSchemas\":null}: at position root"
+      }
+    }
+  ]
+}

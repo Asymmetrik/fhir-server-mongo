@@ -1,0 +1,29 @@
+{
+    "resourceType": "Practitioner",
+    "id": "1679033641",
+    "identifier": [
+        {
+            "use": "official",
+            "type": {
+                "coding": [
+                    {
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                        "code": "NPI"
+                    }
+                ]
+            },
+            "system": "http://hl7.org/fhir/sid/us-npi",
+            "value": "1679033641"
+        }
+    ],
+    "name": [
+        {
+            "use": "usual",
+            "text": "NAJJAR  MD, SAMER S.",
+            "family": "NAJJAR  MD",
+            "given": [
+                "SAMER S."
+            ]
+        }
+    ]
+}
